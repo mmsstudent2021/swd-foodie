@@ -1,5 +1,76 @@
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import "animate.css/animate.min.css";
+
+
+$primary : #007822;
+
+$font-family-sans-serif : 'Montserrat', sans-serif;
+$navbar-nav-link-padding-x : 1.5rem;
+
+$border-radius: .5rem;
+$border-radius-lg: .75rem;
+
+$btn-font-size : .75rem;
+$btn-padding-x : 1rem;
+$btn-padding-y : .75rem;
+
+$btn-font-size-lg : 1rem;
+$btn-padding-x-lg : 1.75rem;
+$btn-padding-y-lg : .75rem;
+
+
 @import "bootstrap/scss/bootstrap";
+
+.brand-icon{
+  height: 40px;
+  transition: 0.5s;
+}
+
+.nav-link{
+  transition: transform 0.3s;
+}
+
+.nav-link.active{
+  color: white !important;
+}
+
+.site-navbar{
+  &:hover .brand-icon{
+    transform: rotate(360deg);
+  }
+  &:hover .nav-link.active{
+    transform: translateY(-3px);
+  }
+}
+
+.brand-name{
+
+}
+.service{
+  text-align: center;
+}
+.service{
+  svg{
+    fill: $primary;
+  }
+}
+
+.plate-card{
+  transition: 0.3s;
+
+  img{
+    transition: 0.3s;
+  }
+
+  &:hover{
+    transform: translateY(-10px);
+    box-shadow: $box-shadow;
+  }
+
+  &:hover img{
+    transform: rotate(45deg);
+  }
+}
+
+
